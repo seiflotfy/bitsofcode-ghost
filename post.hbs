@@ -1,0 +1,27 @@
+{{!< default}}
+{{#post}}
+<article class="post">
+    <header class="post__header m-b-lg">
+        <h1 class="post__title h1">{{title}}</h1>
+        <div class="post__meta">
+            <em>{{ date }}</em>
+            {{#if tags}}
+                <em>{{tags}}</em>
+            {{/if}}
+        </div>
+    </header>
+
+    <div class="post__content p-b-xlg m-b-lg">
+        {{ content }}
+    </div>
+
+    <footer class="post__footer p-b-md m-b-lg">
+        {{> post-share}}
+        {{> subscribe}}
+        {{> post-suggestions}}
+    </footer>
+
+    {{> disqus}}
+
+</article>
+{{/post}}

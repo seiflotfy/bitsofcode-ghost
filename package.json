@@ -1,0 +1,33 @@
+{
+  "name": "bitsofcode",
+  "version": "3.0.2",
+  "description": "Ghost Theme for bitsofcode",
+  "main": "gulpfile.js",
+  "browserlist": [
+    "last 2 versions",
+    "Explorer >= 11"
+  ],
+  "dependencies": {
+    "babel": "^6.23.0"
+  },
+  "scripts": {
+    "start": "gulp",
+    "zip": "node zip.js",
+    "server": "cd ../../../ && npm start"
+  },
+  "author": "Ire Aderinokun",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^7.1.2",
+    "gulp": "^3.9.1",
+    "gulp-babel": "^7.0.0",
+    "gulp-clean-css": "^3.7.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-postcss": "^7.0.0",
+    "gulp-sass": "^3.1.0",
+    "gulp-uglifyjs": "^0.6.2",
+    "postcss-scss": "^1.0.2",
+    "replace": "^0.3.0",
+    "smart-zip": "0.0.9"
+  }
+}
